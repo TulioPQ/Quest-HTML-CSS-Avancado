@@ -1,0 +1,79 @@
+@media(max-width:425px) {
+    .container {
+        background: url(../images/bg-mobile.svg) no-repeat;
+        background-color: hsl(257, 40%, 49%);
+        grid-template-areas: 
+            "logo"
+            "mockup"
+            "conteudo"
+            "footer";
+        grid-template-rows: repeat(4,auto);
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .logo {
+        left: auto;
+        display: block;
+    }
+
+
+    .logo img {
+        padding-left: 10%;
+        height: 30%;
+        margin-top: 10%;
+    }
+    .mockup {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: static;
+        width: 100%;
+    }
+    .mockup img {
+        margin: 0 auto;
+        position: static;
+        align-self: center;
+        width: 70%;
+        right: auto;
+    }
+    .conteudo{
+        justify-content: center;
+        justify-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        
+    }
+    .conteudo .titulo {
+        font-size: 2.2rem;
+        margin: 0% 15%;
+        text-align: center;
+    }
+    .conteudo .texto{
+        font-size: 1.6rem;
+        margin: 5% 15%;
+        text-align: center;
+    }
+
+    .conteudo .botao{
+        align-self: center;
+        
+    }
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rodape .social{
+        justify-content: center;
+    }
+
+    .rodape .attribution{
+        right: auto;
+    }
+}
+        
+ 
