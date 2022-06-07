@@ -1,7 +1,10 @@
-.container {
+body {
     background: url(../images/bg-desktop.svg) no-repeat;
     background-color: hsl(257, 40%, 49%);
-    background-size: cover;
+    background-size: contain;
+}
+
+.container {
     display: grid;
     grid-template-areas: "logo logo"
         "mockup conteudo"
@@ -34,7 +37,6 @@
     display: flex;
     position: relative;
     height: 100%;
-    /* width: 100%; */
     align-items: right;
 }
 
@@ -114,6 +116,7 @@
 }
 
 .rodape .attribution {
+    display: none;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -122,6 +125,7 @@
 .rodape .attribution a {
     color: white;
 }
+
 .rodape a:visited {
     color: white;
 }
@@ -134,3 +138,5 @@
 .rodape .attribution a:hover {
     color: hsl(300, 69%, 71%);
 }
+
+
